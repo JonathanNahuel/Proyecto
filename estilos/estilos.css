@@ -19,7 +19,7 @@ html{
 /*INDEX*/
 
 #id__header {
-  background-color: rgba(139, 137, 137, 0.747);  
+  background-image: linear-gradient(to top , rgba(139, 137, 137, 0.747), black) ; 
   height: 15%;
   display: grid;
   grid-template-columns: auto;
@@ -61,8 +61,8 @@ html{
     margin: 20px;
 }
 
-.img__fondo{
-    background-color: black; 
+.img__fondo{ 
+    background-image: linear-gradient(to left , rgba(139, 137, 137, 0.747), black) ; 
     padding: 30px;  
 }
 .imagenRopa{
@@ -88,7 +88,7 @@ html{
 }
 
 .aside__fondo{
-    background-color: black;
+    background-image: linear-gradient(to right , rgba(139, 137, 137, 0.747), black) ; 
     text-align: end;
     height: 300px;
 }
@@ -125,9 +125,18 @@ html{
 .redesSociales{
     padding-left: 10px;
 }
+.redesSociales a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.centroAyuda a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
 
 .centroAtencion{
     padding-right: 10px;
+    
 }
 
 /*MOBILE*/
