@@ -71,12 +71,23 @@ html{
     grid-template-columns: repeat(3, 1fr);
     color: rgb(255, 255, 255);
     justify-content: space-between;
-    text-align: center;
+    text-align: center; 
+}
+.imgIndex{
+    transition: transform 0.5s; 
+}
+.imgIndex:Hover{
+    transform: scale(1.2);
 }
 
 .fondo__article {
     background-color: rgba(139, 137, 137, 0.747);
     height: 70px;
+}
+.textoAni{
+    animation-duration: 1s;
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
 }
 
 .articleColor{
@@ -85,6 +96,16 @@ html{
     text-transform: uppercase;
     font-weight: bold;   
     font-size: 2.0rem; 
+    
+}
+@keyframes parpadeo {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 .aside__fondo{
@@ -112,6 +133,7 @@ html{
     float: right;
     margin-top: 50px;
     margin-right: 20px;
+    
 }
 
 #footer__fondo{  
@@ -178,7 +200,6 @@ html{
     #mainPage{ 
         grid-template-columns: repeat(1, 1fr); 
     }
-    
 }
 
 /*SUCURSALES*/
@@ -252,7 +273,11 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.0rem;  
+    font-size: 2.0rem;
+    transition: transform 0.5s;
+}
+.img:hover{
+    transform: scale(1.2);
 }
 
 /* MOBILE */
