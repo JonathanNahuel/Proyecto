@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JG INDUMENTARIA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/Monogram-JG-Logo-Design-by-Greenlines-Studios.jpg">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
@@ -28,42 +30,46 @@
     </header>
 
     <main id="mainPage">
-        <section class="flexContacto">
-            <div class="contacto  animate__animated animate__zoomIn">
-                <form action="">
-                    <fieldset>
-                        <legend>Contacto</legend>
 
-                        <div>
-                            <label for="">Ingrese su nombre</label>
-                            <input type="text" placeholder="Nombre"><br>
-                        </div>
-    
-                        <div>
-                            <br><label for="">Ingrese su email</label>
-                            <input type="mail" placeholder="email"><br>
-                        </div>
+        <section class="  animate__animated animate__zoomIn container border border-1 shadow p-3 mb-5 bg-body rounded w-25">
+            
+            <div class="contacto  container d-flex justify-content-center align-items-center">
+                <form>
+                    <div class="d-flex justify-content-center ">
+                        <h1>Contacto</h1>
+                    </div>
 
-                        <div>
-                            <br><label for="">Ingrese su Numero</label>
-                            <input type="txtPhone" placeholder="Numero">
-                        </div>
-    
-                        <div>
-                            <br><label for="">Ingrese el mensaje</label><br>
-                            <textarea name="message" rows="5" placeholder="Mensaje"></textarea >
-                        </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center">
+                        <label for="formGroupExampleInput" class="form-label">Ingrese su nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                
+                    <div class="mb-3 d-flex justify-content-center align-items-center">
+                        <label for="exampleInputEmail1" class="form-label">Ingrese su email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+        
+                    <div class="mb-3 d-flex justify-content-center align-items-center">
+                        <label for="formGroupExampleInput" class="form-label">Ingrese su numero</label>
+                        <input type="txtPhone" class="form-control" id="formGroupExampleInput">
+                    </div>
+        
+                    <div class="mb-3 d-flex justify-content-center align-items-center ">
+                        <label for="exampleFormControlTextarea1" class="form-label">Ingrese un Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+        
+                    <div class=" d-flex justify-content-center align-items-center mt-5">
+                        <button type="submit" value="Submit" class="btn btn-primary outline-primary m-3 ">Enviar</button>
+                        <button type="reset" value="Reset" class="btn btn-outline-danger m-3">Borrar</button>
                     
-                        <div>
-                            <input type="button" value="Enviar">
-                        </div>
+                    </div> 
 
-                    </fieldset> 
-    
                 </form>
             </div>
 
-        </section>       
+        </section>        
 
     </main>
 
