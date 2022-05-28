@@ -20,20 +20,18 @@ html{
 
 #id__header {
   background-image: linear-gradient(to top , rgba(139, 137, 137, 0.747), black) ; 
-  height: 15%;
+  height: 50%;
   display: grid;
   grid-template-columns: auto;
 }
 
-.headerNav{
-    text-align: right;
-}
-
-.headerNav a{
-    text-decoration: none;
-    font-size: 2.0rem;
-    color: rgb(0, 0, 0) ;
-    margin: 20px;
+.headerNav {
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:end;
+    gap: 20px;
 }
 
 .section__mhn{
@@ -159,6 +157,15 @@ html{
 
 /* CONTACTO */
 
+.headerNav a{
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:end;
+    gap: 20px;
+}
+
 #mainPage{
     background-color: black;
     height: 100%; 
@@ -226,7 +233,6 @@ html{
 .generoRopas{
     display: flex;
     flex-direction: column;
-    background-color: rgb(8, 12, 240);
     color: white;
     font-weight: bold;
     font-size: 3.0rem;
