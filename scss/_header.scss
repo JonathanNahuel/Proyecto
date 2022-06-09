@@ -1,0 +1,14 @@
+#id__header {
+    background-image: linear-gradient(to top , rgba(139, 137, 137, 0.747), black) ; 
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+.headerNav {
+    font-size: 1.5rem;
+    @include flex(column,end);
+    list-style: none;
+    
+    gap: 20px;
+  }

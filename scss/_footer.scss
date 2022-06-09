@@ -1,0 +1,24 @@
+#footer__fondo{  
+    display: flex;
+    background-color: hsla(39, 85%, 62%, 0.788);
+    font-size: 1.7rem;
+    margin-top: auto;
+    justify-content: space-between; 
+}
+
+.redesSociales {
+	padding-left: 10px;
+	a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+	}
+}
+.centroAyuda {
+	a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+	}
+}
+.centroAtencion {
+	padding-right: 10px;
+}
