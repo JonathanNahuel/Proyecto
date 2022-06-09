@@ -105,7 +105,7 @@ html {
   margin-top: 50px;
   margin-right: 20px; }
 
-<<<<<<< HEAD
+
 #footer__fondo {
   display: flex;
   background-color: rgba(240, 183, 76, 0.788);
@@ -126,13 +126,6 @@ html {
 .centroAtencion {
   padding-right: 10px; }
 
-/*MOBILE*/
-@media screen and (max-width: 800px) {
-  .imagenRopa {
-    grid-template-columns: repeat(1, 1fr); } }
-
-=======
->>>>>>> sass
 /* CONTACTO */
 .mainPage, .registrarseMain {
   background-color: black;
@@ -208,16 +201,7 @@ html {
   transition: transform 0.5s; }
   .img:hover {
     transform: scale(1.1); }
-<<<<<<< HEAD
 
-/* MOBILE */
-@media screen and (max-width: 800px) {
-  .galeria__grid {
-    grid-template-columns: repeat(2, 1fr); }
-  #footer__fondo {
-    font-size: 1.5rem; } }
-=======
->>>>>>> sass
 
 /*REGISTRARSE*/
 .flexRegistro {
