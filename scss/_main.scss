@@ -1,0 +1,179 @@
+/* INDEX*/
+.section__mhn {
+	@include flex(column,center,center);
+	background-color: red;
+	height: 50px;
+	border: 2px solid map-get($mapa-color, negro);;
+	
+}
+.generoMenu {
+	display: flex;
+	color: map-get($mapa-color, negro);
+	text-decoration: none;
+	font-size: 2.0rem;
+	font-weight: bold;
+	gap: 50px;
+	color: map-get($mapa-color, blanco);
+	a {
+		text-decoration: none;
+		font-size: 2.0rem;
+		color: rgb(8, 12, 240);
+		margin: 20px;
+	}
+}
+
+.img__fondo{ 
+    background-image: linear-gradient(to left , rgba(139, 137, 137, 0.747), black) ; 
+    padding: 30px;  
+}
+
+.fondo__article {
+    @include flex(column,center,center);
+    background-color: rgba(139, 137, 137, 0.747);
+    height: 70px;
+}
+.textoAni{
+    animation-duration: 1s;
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
+    font-size: 2.0rem;
+}
+
+.articleColor{
+    border: 2px dotted rgb(0, 204, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;   
+    font-size: 2.0rem; 
+    
+}
+@keyframes parpadeo {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.aside__fondo{
+    background-image: linear-gradient(to right , rgba(139, 137, 137, 0.747), black) ; 
+    text-align: end;
+    height: 300px;
+}
+
+.box{
+    background-color: rgba(17, 0, 255, 0.747);
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 200px; 
+    padding: 10px;
+    float:left;
+    color: map-get($mapa-color, blanco);
+    font-size: 1.5rem;
+}
+
+.box__aside{
+    background-color: map-get($mapa-color, negro);
+    display: flex;
+    justify-content: end;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    
+}
+
+/* CONTACTO */
+
+.mainPage{
+    background-color: map-get($mapa-color, negro);
+    height: 100%; 
+    display: grid;
+    grid-template-columns: $colum-repeat;
+ }
+
+
+.contacto{  
+    background-color: map-get($mapa-color, negro);
+    color: map-get($mapa-color, blanco);
+    font-size: 1.5rem;
+    height:100%
+}
+
+/*SUCURSALES*/
+ 
+.locales__mapa{
+    @include flex(column,center,center);
+    color: map-get($mapa-color, blanco);
+    font-weight: bold;
+    font-size: 3.0rem;
+    text-decoration:dashed;  
+    background-color: map-get($mapa-color, negro);
+    
+}
+
+.divMapa{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: map-get($mapa-color, blanco);
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($mapa-color, negro);
+    gap: 50px;  
+}
+
+.sucursal{
+    @include flex(column,center,center);
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+      
+}
+
+/* GALERIA*/
+
+.generoRopas{
+    @include flex(column,center,center);    
+    color: map-get($mapa-color, blanco);
+    font-weight: bold;
+    font-size: 3.0rem;
+    text-decoration:dashed;   
+}
+
+.galeria__grid{
+    background-color: map-get($mapa-color, negro);
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    object-fit: cover;
+    color: map-get($mapa-color, blanco);
+    padding: 20px;  
+   row-gap: 40px;   
+}
+
+.img {
+	@include flex(column,center,center);
+	font-size: 2.0rem;
+	transition: transform 0.5s;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+
+/*REGISTRARSE*/
+
+.registrarseMain{
+    @extend .mainPage
+}
+
+.flexRegistro{
+    @include flex(column,center,center);
+}
+.registro{ 
+    @extend .contacto
+}
+    

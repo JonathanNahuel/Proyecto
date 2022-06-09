@@ -12,7 +12,6 @@ body {
 html {
   font-size: 62.5%; }
 
-/*INDEX*/
 #id__header {
   background-image: linear-gradient(to top, rgba(139, 137, 137, 0.747), black);
   height: 50%;
@@ -23,17 +22,20 @@ html {
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  list-style: none;
   justify-content: end;
+  align-items: flex-start;
+  list-style: none;
   gap: 20px; }
 
+/* INDEX*/
 .section__mhn {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: red;
   height: 50px;
-  border: 2px solid black;
-  justify-content: center;
-  align-items: center; }
+  border: 2px solid black; }
 
 .generoMenu {
   display: flex;
@@ -43,12 +45,11 @@ html {
   font-weight: bold;
   gap: 50px;
   color: white; }
-
-.generoMenu a {
-  text-decoration: none;
-  font-size: 2.0rem;
-  color: #080cf0;
-  margin: 20px; }
+  .generoMenu a {
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: #080cf0;
+    margin: 20px; }
 
 .img__fondo {
   background-image: linear-gradient(to left, rgba(139, 137, 137, 0.747), black);
@@ -56,6 +57,7 @@ html {
 
 .fondo__article {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(139, 137, 137, 0.747);
@@ -103,60 +105,30 @@ html {
   margin-top: 50px;
   margin-right: 20px; }
 
-#footer__fondo {
-  display: flex;
-  background-color: rgba(240, 183, 76, 0.788);
-  font-size: 1.7rem;
-  margin-top: auto;
-  justify-content: space-between; }
-
-.redesSociales {
-  padding-left: 10px; }
-
-.redesSociales a {
-  text-decoration: none;
-  color: black; }
-
-.centroAyuda a {
-  text-decoration: none;
-  color: black; }
-
-.centroAtencion {
-  padding-right: 10px; }
-
-/*MOBILE*/
-@media screen and (max-width: 800px) {
-  .imagenRopa {
-    grid-template-columns: repeat(1, 1fr); } }
-
 /* CONTACTO */
-#mainPage {
+.mainPage, .registrarseMain {
   background-color: black;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr); }
 
-.contacto {
+.contacto, .registro {
   background-color: black;
   color: white;
   font-size: 1.5rem;
   height: 100%; }
 
-/*MOBILE */
-@media screen and (max-width: 800px) {
-  #mainPage {
-    grid-template-columns: repeat(1, 1fr); } }
-
 /*SUCURSALES*/
 .locales__mapa {
   display: flex;
   flex-direction: column;
-  color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
   font-weight: bold;
   font-size: 3.0rem;
-  align-items: center;
-  justify-content: center;
-  text-decoration: dashed; }
+  text-decoration: dashed;
+  background-color: black; }
 
 .divMapa {
   display: grid;
@@ -165,30 +137,27 @@ html {
   background-color: white;
   justify-content: center;
   align-items: center;
+  background-color: black;
   gap: 50px; }
 
 .sucursal {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
-  font-size: 1.5rem;
-  justify-content: center;
-  align-items: center; }
-
-@media screen and (max-width: 800px) {
-  .divMapa {
-    grid-template-columns: repeat(1, 1fr); } }
+  font-size: 1.5rem; }
 
 /* GALERIA*/
 .generoRopas {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-weight: bold;
   font-size: 3.0rem;
-  justify-content: center;
-  align-items: center;
   text-decoration: dashed; }
 
 .galeria__grid {
@@ -209,37 +178,32 @@ html {
   align-items: center;
   font-size: 2.0rem;
   transition: transform 0.5s; }
-
-.img:hover {
-  transform: scale(1.1); }
-
-/* MOBILE */
-@media screen and (max-width: 800px) {
-  .galeria__grid {
-    grid-template-columns: repeat(2, 1fr); }
-  #footer__fondo {
-    font-size: 1.5rem; } }
+  .img:hover {
+    transform: scale(1.1); }
 
 /*REGISTRARSE*/
-#registrarseMain {
-  height: 100%;
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); }
-
 .flexRegistro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.registro {
-  background-color: black;
-  color: white;
-  font-size: 1.5rem;
-  height: 100%; }
+#footer__fondo {
+  display: flex;
+  background-color: rgba(240, 183, 76, 0.788);
+  font-size: 1.7rem;
+  margin-top: auto;
+  justify-content: space-between; }
 
-/*MOBILE */
-@media screen and (max-width: 800px) {
-  #registrarseMain {
-    grid-template-columns: repeat(1, 1fr); } }
+.redesSociales {
+  padding-left: 10px; }
+  .redesSociales a {
+    text-decoration: none;
+    color: black; }
+
+.centroAyuda a {
+  text-decoration: none;
+  color: black; }
+
+.centroAtencion {
+  padding-right: 10px; }

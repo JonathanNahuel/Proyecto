@@ -1,0 +1,37 @@
+/*Mediaqueri INDEX*/
+@media screen and (max-width:800px) {
+    .imagenRopa{    
+        grid-template-columns: $colum-repeat;     
+    }
+}
+
+/*Mediaqueri CONTACTO*/
+@media screen and (max-width:800px) {
+    #mainPage{ 
+        grid-template-columns: $colum-repeat; 
+    }
+}
+
+/*Mediaqueri SUCURSALES*/
+@media screen and (max-width: 800px) {
+    .divMapa{
+        grid-template-columns: $colum-repeat; 
+    }   
+}
+
+/* Mediaqueri GALERIA */
+@media screen and (max-width: 800px){
+    .galeria__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer__fondo{ 
+        font-size: 1.5rem;
+    }
+}   
+
+/*Mediquaries REGISTRARSE*/
+@media screen and (max-width:800px) {
+    #registrarseMain{ 
+        grid-template-columns: $colum-repeat; 
+    }   
+} 
