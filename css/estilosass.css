@@ -170,6 +170,13 @@ html {
   margin-bottom: 50px;
   font-size: 1.5rem; }
 
+  /*Mediaqueri SUCURSALES*/
+@media screen and (max-width: 800px) {
+  .divMapa{
+      grid-template-columns: repeat(1, 1fr); 
+  }   
+}
+
 /* GALERIA*/
 .generoRopas {
   display: flex;
@@ -200,9 +207,18 @@ html {
   font-size: 2.0rem;
   transition: transform 0.5s; }
   .img:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1); 
+  }
+  @media screen and (max-width: 800px){
+    .galeria__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer__fondo{ 
+        font-size: 1.5rem;
+    }
+}   
 
-
+  
 /*REGISTRARSE*/
 .flexRegistro {
   display: flex;
