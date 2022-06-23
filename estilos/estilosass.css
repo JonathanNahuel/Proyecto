@@ -105,6 +105,35 @@ html {
   margin-top: 50px;
   margin-right: 20px; }
 
+
+#footer__fondo {
+  display: flex;
+  background-color: rgba(240, 183, 76, 0.788);
+  font-size: 1.7rem;
+  margin-top: auto;
+  justify-content: space-between; }
+
+.redesSociales {
+  padding-left: 10px; }
+  .redesSociales a {
+    text-decoration: none;
+    color: black; }
+
+.centroAyuda a {
+  text-decoration: none;
+  color: black; }
+
+.centroAtencion {
+  padding-right: 10px; }
+
+/*Mediquaries INDEX*/
+@media screen and (max-width:800px) {
+  .imagenRopa{    
+    grid-template-columns: repeat(1, 1fr);     
+  }
+}
+
+
 /* CONTACTO */
 .mainPage, .registrarseMain {
   background-color: black;
@@ -118,6 +147,12 @@ html {
   font-size: 1.5rem;
   height: 100%; }
 
+  /*Mediquaries CONTACTO*/
+@media screen and (max-width:800px) {
+#mainPage{ 
+  grid-template-columns: repeat(1, 1fr);  
+}   
+} 
 /*SUCURSALES*/
 .locales__mapa {
   display: flex;
@@ -149,6 +184,13 @@ html {
   margin-bottom: 50px;
   font-size: 1.5rem; }
 
+  /*Mediaqueri SUCURSALES*/
+@media screen and (max-width: 800px) {
+.divMapa{
+  grid-template-columns: repeat(1, 1fr); 
+}   
+}
+
 /* GALERIA*/
 .generoRopas {
   display: flex;
@@ -178,9 +220,21 @@ html {
   align-items: center;
   font-size: 2.0rem;
   transition: transform 0.5s; }
-  .img:hover {
-    transform: scale(1.1); }
+.img:hover {
+  transform: scale(1.1); 
+}
 
+/*Mediquaries GALERIA*/
+@media screen and (max-width: 800px){
+  .galeria__grid{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  #footer__fondo{ 
+      font-size: 1.5rem;
+  }
+}   
+
+  
 /*REGISTRARSE*/
 .flexRegistro {
   display: flex;
@@ -207,3 +261,10 @@ html {
 
 .centroAtencion {
   padding-right: 10px; }
+
+  /*Mediquaries REGISTRARSE*/
+@media screen and (max-width:800px) {
+  #registrarseMain{ 
+      grid-template-columns: repeat(1, 1fr);  
+  }   
+} 
