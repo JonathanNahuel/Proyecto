@@ -1,61 +1,165 @@
 /*Mediaqueri INDEX*/
-@media screen and (max-width:800px) {
-    .imagenRopa{    
-        grid-template-columns: $colum-repeat;     
-    }
+
+@media screen and (max-width:1336px) {
+.aside__fondo{    
+  height: 500px;      
+  }
+}
+
+@media screen and (max-width:840px) {
+.imagenRopa{    
+  grid-template-columns: $colum-repeat;    
+}  
+
+#footer__fondo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+
+.box__aside {
+  margin-right: 0%;
+}
+
+.redesSociales{
+  width: 200px;
+}
+}  
+  
+@media screen and (max-width:630px){
+.generoMenu a{
+  margin: 5px;
+}
+
+.box{
+  margin-left: 100px;
+} 
+
+.box__aside {
+  margin-right: 0%;
+}
+
+.redesSociales{
+  width: 371px;
+  } 
+}
+
+@media screen and (max-width:516px){
+.generoMenu a{
+  margin: 2px;
+}
+
+.fondo__article{
+  height: 100px;
+}
+   
+.box{
+  margin-left: 100px;
+}
+
+.box__aside {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0%;
+}
+
+.imgc{
+  width: 500px;
+  height: 150px;
+  object-fit: contain;
+}
+  
+#footer__fondo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+ }
 }
 
 /*Mediaqueri CONTACTO*/
+
+@media screen and (max-width:1680px) {
+.bg-body{ 
+  width: width-repeat;  
+  }   
+} 
+
 @media screen and (max-width:800px) {
-    #mainPage{ 
-        grid-template-columns: $colum-repeat; 
-    }
+#mainPage{ 
+  grid-template-columns: $colum-repeat; 
+}
+
+.bg-body{ 
+  width: width-querie;  
+}     
 }
 
 /*Mediaqueri SUCURSALES*/
+
 @media screen and (max-width: 800px) {
-    .divMapa{
-        grid-template-columns: $colum-repeat; 
-    }   
+.divMapa{
+  grid-template-columns: $colum-repeat; 
+  }   
 }
 
-
 /* Mediaqueri GALERIA */
-@media screen and (max-width: 1200px){
-    .galeria__grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    #footer__fondo{ 
-        font-size: 1.5rem;
-    }
-  } 
-@media screen and (max-width: 800px){
-    .galeria__grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #footer__fondo{ 
-        font-size: 1.5rem;
-    }
-}  
-@media screen and (max-width: 1280px){
-    .galeria__grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    #footer__fondo{ 
-        font-size: 1.5rem;
-    }
-}  
 
-@media screen and (max-width: 1250px){
-    .galeria__grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-   
+@media screen and (max-width: 1251px){
+.galeria__grid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#footer__fondo{ 
+  font-size: 1.5rem;
+}
+
+} 
+
+@media screen and (max-width: 951px){
+.galeria__grid{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#footer__fondo{ 
+  font-size: 1.5rem;
+}
+
+.img{
+  width: 98%;
+  object-fit: cover;
+}
+} 
+
+@media screen and (max-width: 651px){
+.galeria__grid{
+  grid-template-columns: $colum-repeat; 
+}
+
+#footer__fondo{ 
+  font-size: 1.5rem;
+}
+
+.img{
+  width: 98%;
+  object-fit: cover;
+}
 } 
 
 /*Mediquaries REGISTRARSE*/
-@media screen and (max-width:800px) {
-    #registrarseMain{ 
-        grid-template-columns: $colum-repeat; 
-    }     
+
+@media screen and (max-width:1680px) {
+.bg-body{ 
+  width: width-repeat;  
+}   
 } 
+
+@media screen and (max-width:800px) {
+#registrarseMain{ 
+  grid-template-columns: $colum-repeat; 
+}  
+
+.bg-body{ 
+  width: width-querie;  
+  } 
+}      
+

@@ -107,17 +107,18 @@ html {
 
 
 #footer__fondo {
-  display: flex;
+
   background-color: rgba(240, 183, 76, 0.788);
   font-size: 1.7rem;
   margin-top: auto;
-  justify-content: space-between; }
+  }
 
 .redesSociales {
   padding-left: 10px; }
   .redesSociales a {
     text-decoration: none;
-    color: black; }
+    color: black;
+   }
 
 .centroAyuda a {
   text-decoration: none;
@@ -126,11 +127,76 @@ html {
 .centroAtencion {
   padding-right: 10px; }
 
+
 /*Mediquaries INDEX*/
-@media screen and (max-width:800px) {
-  .imagenRopa{    
-    grid-template-columns: repeat(1, 1fr);     
+@media screen and (max-width:1336px) {
+  .aside__fondo{    
+    height: 500px;      
   }
+ }
+@media screen and (max-width:840px) {
+.imagenRopa{    
+  grid-template-columns: repeat(1, 1fr);     
+}  
+#footer__fondo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+
+.box__aside {
+  margin-right: 0%;
+}
+.redesSociales{
+  width: 200px;
+}
+}
+
+@media screen and (max-width:630px){
+.generoMenu a{
+  margin: 5px;
+}
+.box{
+margin-left: 100px;
+} 
+
+.box__aside {
+margin-right: 0%;
+}
+
+.redesSociales{
+  width: 371px;
+}
+
+} 
+
+@media screen and (max-width:516px){
+.generoMenu a{
+  margin: 2px;
+}
+.fondo__article{
+  height: 100px;
+}
+
+.box{
+margin-left: 100px;
+}
+.box__aside {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0%;
+}
+.imgc{
+  width: 500px;
+  height: 150px;
+  object-fit: contain;
+}
+
+#footer__fondo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
 }
 
 
@@ -147,12 +213,24 @@ html {
   font-size: 1.5rem;
   height: 100%; }
 
+
   /*Mediquaries CONTACTO*/
+
+@media screen and (max-width:1680px) {
+.bg-body{ 
+  width: 25%;  
+}   
+} 
+
 @media screen and (max-width:800px) {
 #mainPage{ 
   grid-template-columns: repeat(1, 1fr);  
-}   
 } 
+.bg-body{ 
+  width: 37%;  
+} 
+}
+
 /*SUCURSALES*/
 .locales__mapa {
   display: flex;
@@ -219,13 +297,16 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 2.0rem;
-  transition: transform 0.5s; }
+  transition: transform 0.5s;
+  object-fit:cover;
+ }
+  
 .img:hover {
   transform: scale(1.1); 
 }
 
 /*Mediquaries GALERIA*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1251px){
   .galeria__grid{
       grid-template-columns: repeat(3, 1fr);
   }
@@ -233,15 +314,32 @@ html {
       font-size: 1.5rem;
   }
 } 
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 951px){
   .galeria__grid{
       grid-template-columns: repeat(2, 1fr);
   }
   #footer__fondo{ 
       font-size: 1.5rem;
   }
+  .img{
+    width: 98%;
+    object-fit: cover;
+  }
 } 
-  
+
+@media screen and (max-width: 651px){
+  .galeria__grid{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  #footer__fondo{ 
+      font-size: 1.5rem;
+  }
+  .img{
+    width: 98%;
+    object-fit: cover;
+  }
+} 
 
   
 /*REGISTRARSE*/
@@ -272,8 +370,17 @@ html {
   padding-right: 10px; }
 
   /*Mediquaries REGISTRARSE*/
+@media screen and (max-width:1680px) {
+.bg-body{ 
+  width: 25%;  
+}   
+} 
+  
 @media screen and (max-width:800px) {
-  #registrarseMain{ 
-      grid-template-columns: repeat(1, 1fr);  
+#registrarseMain{ 
+  grid-template-columns: repeat(1, 1fr);  
   }   
+.bg-body{ 
+    width: 37%;  
+  } 
 } 
